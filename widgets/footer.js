@@ -72,7 +72,7 @@ export const Footer = ({}) => {
 
   return (
     <div className="flex flex-col items-center pt-16 pb-20">
-      <Title title="Твое аниме" />
+      <Title title="Рандомное аниме" />
       <div className="flex flex-row mt-16 gap-8 h-auto w-full relative">
         <div className="flex flex-col gap-8 flex-1 max-w-[300px]">
           <FooterButton 
@@ -117,7 +117,7 @@ export const Footer = ({}) => {
             )}
 
             {animeRandomStudios.length !== 0 && (
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 <FooterText name="Studios->" />
                 {animeRandomStudios.map((item, i) => (
                   <FooterText text={item.name} key={i} />
@@ -133,7 +133,7 @@ export const Footer = ({}) => {
               </div>
             )}
             {animeRandomThemes.length !== 0 && (
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap ">
                 <FooterText name="Themes->" />
                 {animeRandomThemes.map((item, i) => (
                   <FooterText text={item.name} key={i} />

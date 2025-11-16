@@ -10,7 +10,7 @@ export default function Home() {
       <div className="relative w-full">
         <div className="absolute inset-0 bg-[url('/bgFirst.jpg')] bg-cover bg-center -z-3 -top-3" />
         <div className="max-w-[1200px] mx-auto my-0 pb-12">
-          <header id="#header">
+          <header name="header">
             <Header />
           </header>
           <main>
@@ -22,10 +22,10 @@ export default function Home() {
       <div className="relative w-full">
         <div className="absolute inset-0 bg-[url('/bgSecond.jpg')] bg-cover bg-center -z-2 -top-2" />
         <div className="max-w-[1200px] mx-auto my-0">
-          <main>
+          <main id="anime">
             <SecondMain />
           </main>
-          <main>
+          <main id="manga">
             <ThirdMain />
           </main>
         </div>
@@ -33,7 +33,7 @@ export default function Home() {
       <div className="relative w-full">
         <div className="absolute inset-0 bg-[url('/BgThird.jpg')] bg-cover bg-center -z-2 " />
         <div className="max-w-[1200px] mx-auto my-0">
-          <footer>
+          <footer id="randomAnime">
             <Footer />
           </footer>
         </div>
