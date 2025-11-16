@@ -1,0 +1,24 @@
+@font-face {
+    font-family: AlegrayRegular;
+    src: url(./fonts/AlegreyaSansSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: AlegrayMedium;
+    src: url(./fonts/AlegreyaSansSC-Medium.ttf);
+}
+
+@font-face {
+    font-family: AlegrayBold;
+    src: url(./fonts/AlegreyaSansSC-Bold.ttf);
+}
+
+@font-face {
+    font-family: AlegrayExtraBold;
+    src: url(./fonts/AlegreyaSansSC-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: AlegrayBlack;
+    src: url(./fonts/AlegreyaSansSC-Black.ttf);
+}
