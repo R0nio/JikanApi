@@ -55,6 +55,7 @@ export const Footer = ({}) => {
           if(animeRandomImg === null){
             setAnineRandomImg(normalizeData.images.jpg.large_image_url);
           }
+
         } catch (error) {
           console.error("Error", error);
         } finally {
