@@ -6,38 +6,37 @@ import { Footer } from "../../widgets/footer";
 
 export default function Home() {
   return (
-    <div>
-      <div className="relative w-full">
-        <div className="absolute inset-0 bg-[url('/bgFirst.jpg')] bg-cover bg-center -z-3 -top-3" />
-        <div className="max-w-[1200px] mx-auto my-0 pb-12">
-          <header name="header">
-            <Header />
-          </header>
-          <main>
-            <FirstMain />
-          </main>
+    <>
+      <section className="min-h-screen bg-cover bg-center bg-fixed relative flex items-center justify-center pb-12"
+               style={{ backgroundImage: "url('/bgFirst.jpg')" }}>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Header />
+          <FirstMain />
         </div>
-      </div>
+      </section>
 
-      <div className="relative w-full">
-        <div className="absolute inset-0 bg-[url('/bgSecond.jpg')] bg-cover bg-center -z-2 -top-2" />
-        <div className="max-w-[1200px] mx-auto my-0">
-          <main id="anime">
-            <SecondMain />
-          </main>
-          <main id="manga">
-            <ThirdMain />
-          </main>
+      <section className="min-h-screen bg-cover bg-center bg-fixed relative py-16"
+               style={{ backgroundImage: "url('/bgSecond.jpg')" }}>
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+          <div id="anime">
+              <SecondMain />
+          </div>
+          <div id="manga">
+              <ThirdMain />
+          </div>
         </div>
-      </div>
-      <div className="relative w-full">
-        <div className="absolute inset-0 bg-[url('/BgThird.jpg')] bg-cover bg-center -z-2 " />
-        <div className="max-w-[1200px] mx-auto my-0">
-          <footer id="randomAnime">
-            <Footer />
-          </footer>
+      </section>
+
+
+      <section className="min-h-screen bg-cover bg-center bg-fixed relative flex items-center justify-center"
+               style={{ backgroundImage: "url('/BgThird.jpg')" }}>
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8" id="randomAnime">
+          <Footer />
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
